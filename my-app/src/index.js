@@ -19,7 +19,7 @@ reportWebVitals();
 
 
 
-import React from "react"
-import "../style.header.css";
+
+import "../Styles.header.css";
 
 

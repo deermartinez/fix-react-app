@@ -1,5 +1,10 @@
+import React from "react";
 import logo from './logo.svg';
 import './App.css';
+import Header from "./Components/header";
+import Navbar from "./Components/navbar";
+import Section from "./Components/section";
+import {BrowserRouter as Router,Route,Switch} from "react-router-dom";
 
 function App() {
   return (
