@@ -26,3 +26,8 @@ export default contact;
 //         fontSize:19
 //     }
 // } <h1 style = {navStyling.headStyle}>
+
+
+
+<link rel ="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/twitter-bootstrap/4.0.0/css/bootstrap.min.css"/>
+
