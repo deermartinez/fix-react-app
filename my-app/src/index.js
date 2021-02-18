@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+// import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+
+// {/* <script src="https://unpkg.com/react-router-dom/umd/react-router-dom.min.js"></script> */}
 
 ReactDOM.render(
   <React.StrictMode>
+    <Router>
     <App />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
@@ -20,6 +25,5 @@ reportWebVitals();
 
 
 
-import "../Styles.header.css";
 
 

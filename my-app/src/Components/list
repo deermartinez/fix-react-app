@@ -1,0 +1,5 @@
+Modify the `List` component so that inside of its `ul` tags, it renders one `li` tag for each item in array of grocery objects being passed via props. 
+Each `li` tag should display the `text` property of each grocery object. The array map method should be used for this.
+* For styling purposes, give each `li` tag a class of `list-group-item`.
+
+

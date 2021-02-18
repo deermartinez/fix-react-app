@@ -1,56 +1,94 @@
 import React from "react";
-import logo from './logo.svg';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './App.css';
 import Header from "./Components/header";
 import Navbar from "./Components/navbar";
-import Section from "./Components/section";
-import {BrowserRouter as Router,Route,Switch} from "react-router-dom";
+
+// import section from "./Components/section"
+
+
 import home from "./Pages/home";
 import contact from "./Pages/contact";
-import about from "./Pages/about";
+// import { render } from "react-dom";
 
-//components
 
-//components here will go on every page after
-function App() {
-  return (
+
+
+function App(){
+  return(
     <>
-    {/*Empty div here because we are calling more than one variable int he return}
-     {/* <div className="App"> */}
-      <Header/>
-      {/* calls header without formatting on this page*/}
-      <Navbar/>
+    <Header />
       <Router>
         <Switch>
-          <Route exact path = "/" component={home} />
+          <Route exact path ='/' component = {home}/>
+          <Route exact path = '/' exact path ={contact}/>
+
         </Switch>
       </Router>
 
 
-
-
-
-
-
-
-
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
     </>
-    {/* </div> */}
-  );
+
+
+
+  )
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//components
+
+//components here will go on every page after
+// function App() {
+//   render(){
+//   return (
+//     <>
+//     {/*Empty div here because we are calling more than one variable int he return}
+//      {/* <div className="App"> */}
+//       <Header/>
+//       {/* calls header without formatting on this page*/}
+//       <Navbar/>
+//       <Router>
+//         <Switch>
+//           <Route exact path = "/" component={home} />
+//           <Route exact path = "/contact" component={contact} />
+//           <Route exact path = "/about" component={about} />
+//           <Route exact path = "/extra" component={extra} />
+//         </Switch>
+//       </Router>
+//       </>
+// //code from beginning
+//       // {/* <header className="App-header">
+//       //   <img src={logo} className="App-logo" alt="logo" />
+//       //   <p>
+//       //     Edit <code>src/App.js</code> and save to reload.
+//       //   </p>
+//       //   <a
+//       //     className="App-link"
+//       //     href="https://reactjs.org"
+//       //     target="_blank"
+//       //     rel="noopener noreferrer"
+//       //   >
+//       //     Learn React
+//       //   </a>
+//       // </header> */}
+    
+// //     {/* </div> */}
+//     }
+//   );
+// }
 
 export default App;

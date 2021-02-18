@@ -1,9 +1,9 @@
 import React, {Component} from "react";
-import Header from "../components/header";
+import Header from "../Components/header";
 
 
-//whenever coding a pae, always need a render before the return
-//return our page content on the DOM
+// //whenever coding a pae, always need a render before the return
+// //return our page content on the DOM
 
 class about extends Component {
     render(){
@@ -15,3 +15,5 @@ class about extends Component {
         )
     }
 }
+
+export default about;
